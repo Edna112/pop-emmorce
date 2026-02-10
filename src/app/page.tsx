@@ -66,7 +66,7 @@ export default function Home() {
                   <ArrowRight className="w-5 h-5" />
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="rounded-full border-2 border-white text-white hover:bg-white/20 shadow-lg px-8">
+              <Button asChild variant="outline" size="lg" className="rounded-full border-2 border-white bg-transparent text-white hover:bg-white/20 shadow-lg px-8">
                 <Link href="/breeds" className="flex items-center gap-2">
                   Explore Breeds
                 </Link>
