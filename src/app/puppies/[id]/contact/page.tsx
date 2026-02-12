@@ -32,12 +32,39 @@ export default function ContactBreeder({ params }: PageProps) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    alert("Your message has been sent to the breeder! They will contact you soon.");
-    router.push(`/puppies/${id}`);
+
+    try {
+      const res = await fetch("/api/contact-breeder", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          puppyId: puppy.id,
+          puppyName: puppy.name,
+          breed: puppy.breed,
+          breederName: puppy.breeder.name,
+          puppyPrice: puppy.price,
+          puppyLocation: puppy.location,
+        }),
+      });
+
+      const data = await res.json().catch(() => ({}));
+
+      if (!res.ok) {
+        alert(data.error ?? "Something went wrong. Please try again.");
+        return;
+      }
+
+      alert("Your message has been sent to the breeder! They will contact you soon.");
+      router.push(`/puppies/${id}`);
+    } catch {
+      alert("Failed to send message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (

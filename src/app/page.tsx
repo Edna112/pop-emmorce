@@ -32,11 +32,12 @@ export default function Home() {
       <section className="relative min-h-[600px] flex items-center text-white py-20 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
-            src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=1920"
+            src="/images/hero.png"
             alt="Yorkie puppies"
             fill
-            className="object-cover"
+            className="object-cover object-center"
             priority
+            sizes="100vw"
           />
           <div
             className="absolute inset-0"
