@@ -5,7 +5,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "motion/react";
-import { Heart, X, SlidersHorizontal } from "lucide-react";
+import { Heart, X, SlidersHorizontal, Phone } from "lucide-react";
 import { puppies } from "@/data/puppies";
 import { breeds } from "@/data/breeds";
 import { FilterOptions } from "@/types/puppy";
@@ -254,6 +254,14 @@ function BrowsePuppiesContent() {
                         <span className="text-gray-500 line-clamp-1">{puppy.gender}</span>
                         <span className="text-gray-500 line-clamp-1">{puppy.location}</span>
                       </div>
+                      <a
+                        href="tel:+12083155967"
+                        onClick={(e) => e.stopPropagation()}
+                        className="mt-2 flex items-center gap-1.5 text-sm text-[#FF6B35] hover:underline"
+                      >
+                        <Phone className="w-4 h-4 shrink-0" />
+                        <span>Breeder: (208) 315-5967</span>
+                      </a>
                     </CardContent>
                   </Card>
                 </Link>

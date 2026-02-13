@@ -95,20 +95,21 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               <div className="bg-white rounded-lg shadow-md p-8">
-                {/* <h2 className="text-2xl font-bold mb-6">Contact Information</h2> */}
+                <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    {/* <div className="bg-[#FF6B35] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="bg-[#FF6B35] w-12 h-12 rounded-full flex items-center justify-center shrink-0">
                       <Phone className="w-6 h-6 text-white" />
-                    </div> */}
-                    {/* <div>
+                    </div>
+                    <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
-                      <p className="text-gray-600">1-800-PUPPY-SPOT</p>
-                      <p className="text-gray-600">(1-800-787-797-768)</p>
-                    </div> */}
+                      <a href="tel:+12083155967" className="text-gray-600 hover:text-[#FF6B35] transition-colors">
+                        (208) 315-5967
+                      </a>
+                    </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-[#FF6B35] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="bg-[#FF6B35] w-12 h-12 rounded-full flex items-center justify-center shrink-0">
                       <Mail className="w-6 h-6 text-white" />
                     </div>
                     <div>
@@ -117,13 +118,13 @@ export default function ContactPage() {
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
-                    <div className="bg-[#FF6B35] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div className="bg-[#FF6B35] w-12 h-12 rounded-full flex items-center justify-center shrink-0">
                       <MapPin className="w-6 h-6 text-white" />
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Address</h3>
-                      <p className="text-gray-600">123 Puppy Lane</p>
-                      <p className="text-gray-600">New York, NY 10001</p>
+                      {/* <p className="text-gray-600">123 Puppy Lane</p>
+                      <p className="text-gray-600"></p> */}
                       <p className="text-gray-600">United States</p>
                     </div>
                   </div>
