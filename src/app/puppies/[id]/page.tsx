@@ -4,7 +4,7 @@ import { useState, use } from "react";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { Heart, MapPin, Calendar, Shield, Check, Star, Phone, Mail, Share2, Download } from "lucide-react";
+import { Heart, MapPin, Calendar, Shield, Check, Share2, Download } from "lucide-react";
 import { puppies } from "@/data/puppies";
 
 interface PageProps {
@@ -228,58 +228,6 @@ export default function PuppyDetail({ params }: PageProps) {
                   <Download className="w-5 h-5" />
                   <span className="text-sm">Save</span>
                 </button>
-              </div>
-
-              {/* Breeder Information */}
-              <div className="mt-6 pt-6 border-t">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="font-semibold text-lg">Breeder</h3>
-                  <div className="flex items-center space-x-1">
-                    <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-                    <span className="text-sm font-medium">{puppy.breeder.rating}</span>
-                  </div>
-                </div>
-                <p className="font-medium text-gray-900 mb-1">{puppy.breeder.name}</p>
-                <p className="text-sm text-gray-600 mb-4">{puppy.breeder.location}</p>
-                
-                {puppy.breeder.yearsExperience && (
-                  <p className="text-sm text-gray-600 mb-2">
-                    {puppy.breeder.yearsExperience} years of experience
-                  </p>
-                )}
-                {puppy.breeder.totalPuppies && (
-                  <p className="text-sm text-gray-600 mb-4">
-                    {puppy.breeder.totalPuppies} puppies placed
-                  </p>
-                )}
-
-                <div className="space-y-2">
-                  {puppy.breeder.phone && (
-                    <a
-                      href={`tel:${puppy.breeder.phone}`}
-                      className="flex items-center space-x-2 text-[#FF6B35] hover:underline"
-                    >
-                      <Phone className="w-4 h-4" />
-                      <span className="text-sm">{puppy.breeder.phone}</span>
-                    </a>
-                  )}
-                  {puppy.breeder.email && (
-                    <a
-                      href={`mailto:${puppy.breeder.email}`}
-                      className="flex items-center space-x-2 text-[#FF6B35] hover:underline"
-                    >
-                      <Mail className="w-4 h-4" />
-                      <span className="text-sm">{puppy.breeder.email}</span>
-                    </a>
-                  )}
-                </div>
-
-                <Link
-                  href={`/breeders/${puppy.breeder.id}`}
-                  className="block text-center mt-4 text-[#FF6B35] hover:underline text-sm font-medium"
-                >
-                  View Breeder Profile →
-                </Link>
               </div>
 
               {/* Trust Badge */}

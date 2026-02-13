@@ -35,6 +35,10 @@ export async function POST(request: Request) {
       );
     }
 
+    const fromEmail = process.env.SMTP_FROM ?? process.env.SMTP_USER ?? recipientEmail;
+    const fromName = process.env.SMTP_FROM_NAME ?? "YorkieCharm Puppies";
+    const fromAddress = fromName ? `"${fromName}" <${fromEmail}>` : fromEmail;
+
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST ?? "smtp.gmail.com",
       port: Number(process.env.SMTP_PORT) || 587,
@@ -89,7 +93,7 @@ Reply to: ${email}
     `.trim();
 
     await transporter.sendMail({
-      from: process.env.SMTP_FROM ?? process.env.SMTP_USER ?? recipientEmail,
+      from: fromAddress,
       to: recipientEmail,
       subject: `Contact Breeder: ${name} – inquiry about ${puppyName} (${breed})`,
       text,

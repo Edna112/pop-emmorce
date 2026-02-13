@@ -4,8 +4,9 @@ import { useState, use } from "react";
 import { notFound, useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowLeft, Phone, Mail, MapPin, Star, Send, User, MessageSquare } from "lucide-react";
+import { ArrowLeft, Phone, Mail, Send, User, MessageSquare } from "lucide-react";
 import { puppies } from "@/data/puppies";
+import FeedbackBanner from "@/components/FeedbackBanner";
 
 interface PageProps {
   params: Promise<{
@@ -24,6 +25,7 @@ export default function ContactBreeder({ params }: PageProps) {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [feedback, setFeedback] = useState<{ variant: "success" | "error"; title: string; message: string } | null>(null);
 
   if (!puppy) {
     notFound();
@@ -54,14 +56,27 @@ export default function ContactBreeder({ params }: PageProps) {
       const data = await res.json().catch(() => ({}));
 
       if (!res.ok) {
-        alert(data.error ?? "Something went wrong. Please try again.");
+        setFeedback({
+          variant: "error",
+          title: "Message not sent",
+          message: data.error ?? "Something went wrong. Please try again.",
+        });
         return;
       }
 
-      alert("Your message has been sent to the breeder! They will contact you soon.");
-      router.push(`/puppies/${id}`);
+      setFeedback({
+        variant: "success",
+        title: "Message sent",
+        message: "Your message has been delivered to the breeder. They will respond to you at the email address you provided.",
+      });
+      setFormData({ name: "", email: "", phone: "", message: "" });
+      setTimeout(() => router.push(`/puppies/${id}`), 2500);
     } catch {
-      alert("Failed to send message. Please try again.");
+      setFeedback({
+        variant: "error",
+        title: "Message not sent",
+        message: "We couldn't send your message. Please check your connection and try again, or contact the breeder by phone or email.",
+      });
     } finally {
       setIsSubmitting(false);
     }
@@ -85,9 +100,9 @@ export default function ContactBreeder({ params }: PageProps) {
           </p>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            {/* Left Column - Puppy & Breeder Info */}
+            {/* Left Column - Puppy Info */}
             <div className="lg:col-span-1">
-              <div className="bg-white rounded-lg shadow-md p-6 mb-6">
+              <div className="bg-white rounded-lg shadow-md p-6">
                 <h2 className="font-semibold text-lg mb-4">About This Puppy</h2>
                 <div className="relative h-48 mb-4 rounded-lg overflow-hidden">
                   <Image
@@ -107,46 +122,22 @@ export default function ContactBreeder({ params }: PageProps) {
                   <p>{puppy.location}</p>
                 </div>
               </div>
-
-              <div className="bg-white rounded-lg shadow-md p-6">
-                <h2 className="font-semibold text-lg mb-4">Breeder Information</h2>
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="font-bold text-lg">{puppy.breeder.name}</h3>
-                  <div className="flex items-center space-x-1">
-                    <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
-                    <span className="text-sm font-medium">{puppy.breeder.rating}</span>
-                  </div>
-                </div>
-                <div className="space-y-3">
-                  <div className="flex items-center space-x-2 text-gray-600">
-                    <MapPin className="w-4 h-4" />
-                    <span className="text-sm">{puppy.breeder.location}</span>
-                  </div>
-                  {puppy.breeder.phone && (
-                    <a
-                      href={`tel:${puppy.breeder.phone}`}
-                      className="flex items-center space-x-2 text-[#FF6B35] hover:underline"
-                    >
-                      <Phone className="w-4 h-4" />
-                      <span className="text-sm">{puppy.breeder.phone}</span>
-                    </a>
-                  )}
-                  {puppy.breeder.email && (
-                    <a
-                      href={`mailto:${puppy.breeder.email}`}
-                      className="flex items-center space-x-2 text-[#FF6B35] hover:underline"
-                    >
-                      <Mail className="w-4 h-4" />
-                      <span className="text-sm">{puppy.breeder.email}</span>
-                    </a>
-                  )}
-                </div>
-              </div>
             </div>
 
             {/* Right Column - Contact Form */}
             <div className="lg:col-span-2">
               <div className="bg-white rounded-lg shadow-md p-8">
+                {feedback && (
+                  <div className="mb-6">
+                    <FeedbackBanner
+                      variant={feedback.variant}
+                      title={feedback.title}
+                      message={feedback.message}
+                      onDismiss={() => setFeedback(null)}
+                      autoDismissMs={feedback.variant === "success" ? 5000 : 0}
+                    />
+                  </div>
+                )}
                 <h2 className="text-2xl font-bold mb-6">Send a Message</h2>
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div>

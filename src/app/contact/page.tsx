@@ -95,17 +95,17 @@ export default function ContactPage() {
 
             <div className="space-y-6">
               <div className="bg-white rounded-lg shadow-md p-8">
-                <h2 className="text-2xl font-bold mb-6">Contact Information</h2>
+                {/* <h2 className="text-2xl font-bold mb-6">Contact Information</h2> */}
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
-                    <div className="bg-[#FF6B35] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                    {/* <div className="bg-[#FF6B35] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
                       <Phone className="w-6 h-6 text-white" />
-                    </div>
-                    <div>
+                    </div> */}
+                    {/* <div>
                       <h3 className="font-semibold mb-1">Phone</h3>
                       <p className="text-gray-600">1-800-PUPPY-SPOT</p>
                       <p className="text-gray-600">(1-800-787-797-768)</p>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="flex items-start space-x-4">
                     <div className="bg-[#FF6B35] w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
@@ -113,8 +113,7 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Email</h3>
-                      <p className="text-gray-600">support@puppyspot.com</p>
-                      <p className="text-gray-600">info@puppyspot.com</p>
+                      <p className="text-gray-600">yorkiecharmm@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-start space-x-4">
