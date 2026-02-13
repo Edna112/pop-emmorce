@@ -125,7 +125,7 @@ export default function ContactPage() {
                       <h3 className="font-semibold mb-1">Address</h3>
                       {/* <p className="text-gray-600">123 Puppy Lane</p>
                       <p className="text-gray-600"></p> */}
-                      <p className="text-gray-600">United States</p>
+                      <p className="text-gray-600">Idaho, USA</p>
                     </div>
                   </div>
                 </div>

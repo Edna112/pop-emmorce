@@ -18,7 +18,7 @@ export const puppies: Puppy[] = [
     age: 8,
     gender: "Female",
     price: 2800,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/1-1.png",
       "/images/puppies/1-2.png",
@@ -29,7 +29,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -52,7 +52,7 @@ export const puppies: Puppy[] = [
     age: 10,
     gender: "Female",
     price: 3200,
-    location: "New York, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/2-1.png",
       "/images/puppies/2-2.png",
@@ -63,7 +63,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder2",
       name: "Elite Yorkies",
-      location: "New York, USA",
+      location: "Idaho, USA",
       rating: 4.8,
       phone: "(555) 234-5678",
       email: "contact@eliteyorkies.com",
@@ -86,7 +86,7 @@ export const puppies: Puppy[] = [
     age: 7,
     gender: "Male",
     price: 2600,
-    location: "Texas, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/3-1.png",
       "/images/puppies/3-2.png",
@@ -97,7 +97,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder3",
       name: "Texas Yorkies",
-      location: "Texas, USA",
+      location: "Idaho, USA",
       rating: 4.7,
       phone: "(555) 345-6789",
       email: "info@texasyorkies.com",
@@ -120,7 +120,7 @@ export const puppies: Puppy[] = [
     age: 9,
     gender: "Female",
     price: 3000,
-    location: "Ohio, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/4-1.png",
       "/images/puppies/4-2.png",
@@ -131,7 +131,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder4",
       name: "Guardian Yorkies",
-      location: "Ohio, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 456-7890",
       email: "contact@guardianyorkies.com",
@@ -154,7 +154,7 @@ export const puppies: Puppy[] = [
     age: 11,
     gender: "Male",
     price: 2900,
-    location: "Florida, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/5-1.png",
       "/images/puppies/5-2.png",
@@ -165,7 +165,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder5",
       name: "Sunshine Yorkies",
-      location: "Florida, USA",
+      location: "Idaho, USA",
       rating: 4.6,
       phone: "(555) 567-8901",
       email: "info@sunshineyorkies.com",
@@ -188,7 +188,7 @@ export const puppies: Puppy[] = [
     age: 8,
     gender: "Female",
     price: 2700,
-    location: "North Carolina, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/6-1.png",
       "/images/puppies/6-2.png",
@@ -199,7 +199,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder6",
       name: "Carolina Yorkies",
-      location: "North Carolina, USA",
+      location: "Idaho, USA",
       rating: 4.8,
       phone: "(555) 678-9012",
       email: "contact@carolinayorkies.com",
@@ -222,7 +222,7 @@ export const puppies: Puppy[] = [
     age: 12,
     gender: "Male",
     price: 2500,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/7-1.png",
       "/images/puppies/7-2.png",
@@ -233,7 +233,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder7",
       name: "Posh Yorkies",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 789-0123",
       email: "info@poshyorkies.com",
@@ -256,7 +256,7 @@ export const puppies: Puppy[] = [
     age: 10,
     gender: "Female",
     price: 3300,
-    location: "Arizona, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/8-1.png",
       "/images/puppies/8-2.png",
@@ -267,7 +267,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder8",
       name: "Desert Yorkies",
-      location: "Arizona, USA",
+      location: "Idaho, USA",
       rating: 4.7,
       phone: "(555) 890-1234",
       email: "contact@desertyorkies.com",
@@ -290,7 +290,7 @@ export const puppies: Puppy[] = [
     age: 9,
     gender: "Male",
     price: 2950,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/9-1.png",
       "/images/puppies/9-2.png",
@@ -301,7 +301,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -324,7 +324,7 @@ export const puppies: Puppy[] = [
     age: 12,
     gender: "Male",
     price: 3200,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/10-1.png",
       "/images/puppies/10-2.png",
@@ -335,7 +335,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -358,7 +358,7 @@ export const puppies: Puppy[] = [
     age: 7,
     gender: "Female",
     price: 3700,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/11-1.png",
       "/images/puppies/11-2.png",
@@ -369,7 +369,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -392,7 +392,7 @@ export const puppies: Puppy[] = [
     age: 4,
     gender: "Male",
     price: 3300,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/12-1.png",
       "/images/puppies/12-2.png",
@@ -403,7 +403,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -426,7 +426,7 @@ export const puppies: Puppy[] = [
     age: 7,
     gender: "Female",
     price: 3245,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/13-1.png",
       "/images/puppies/13-2.png",
@@ -437,7 +437,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -460,7 +460,7 @@ export const puppies: Puppy[] = [
     age: 12,
     gender: "Male",
     price: 3000,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/14-1.png",
       "/images/puppies/14-2.png",
@@ -471,7 +471,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -494,7 +494,7 @@ export const puppies: Puppy[] = [
     age: 4,
     gender: "Female",
     price: 2600,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/15-1.png",
       "/images/puppies/15-2.png",
@@ -505,7 +505,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -528,7 +528,7 @@ export const puppies: Puppy[] = [
     age: 3,
     gender: "Male",
     price: 3450,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/16-1.png",
       "/images/puppies/16-2.png",
@@ -539,7 +539,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -562,7 +562,7 @@ export const puppies: Puppy[] = [
     age: 9,
     gender: "Male",
     price: 2645,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/17-1.png",
       "/images/puppies/17-2.png",
@@ -573,7 +573,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -596,7 +596,7 @@ export const puppies: Puppy[] = [
     age: 7,
     gender: "Female",
     price: 3500,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/18-1.png",
       "/images/puppies/18-2.png",
@@ -607,7 +607,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -630,7 +630,7 @@ export const puppies: Puppy[] = [
     age: 8,
     gender: "Male",
     price: 3500,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/19-1.png",
       "/images/puppies/19-2.png",
@@ -641,7 +641,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -664,7 +664,7 @@ export const puppies: Puppy[] = [
     age: 8,
     gender: "Female",
     price: 3500,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/20-1.png",
       "/images/puppies/20-2.png",
@@ -675,7 +675,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -698,7 +698,7 @@ export const puppies: Puppy[] = [
     age: 7,
     gender: "Male",
     price: 2900,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/21-1.png",
       "/images/puppies/21-2.png",
@@ -709,7 +709,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -732,7 +732,7 @@ export const puppies: Puppy[] = [
     age: 7,
     gender: "Female",
     price: 2900,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/22-1.png",
       "/images/puppies/22-2.png",
@@ -743,7 +743,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -766,7 +766,7 @@ export const puppies: Puppy[] = [
     age: 7,
     gender: "Male",
     price: 2800,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/23-1.png",
       "/images/puppies/23-2.png",
@@ -777,7 +777,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -800,7 +800,7 @@ export const puppies: Puppy[] = [
     age: 6,
     gender: "Female",
     price: 2565,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/24-1.png",
       "/images/puppies/24-2.png",
@@ -811,7 +811,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -834,7 +834,7 @@ export const puppies: Puppy[] = [
     age: 8,
     gender: "Female",
     price: 3500,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/25-1.png",
       "/images/puppies/25-2.png",
@@ -845,7 +845,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -868,7 +868,7 @@ export const puppies: Puppy[] = [
     age: 18,
     gender: "Male",
     price: 2650,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/26-1.png",
       "/images/puppies/26-2.png",
@@ -879,7 +879,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -902,7 +902,7 @@ export const puppies: Puppy[] = [
     age: 11,
     gender: "Male",
     price: 3200,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/27-1.png",
       "/images/puppies/27-2.png",
@@ -913,7 +913,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -936,7 +936,7 @@ export const puppies: Puppy[] = [
     age: 11,
     gender: "Female",
     price: 2745,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/28-1.png",
       "/images/puppies/28-2.png",
@@ -947,7 +947,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -970,7 +970,7 @@ export const puppies: Puppy[] = [
     age: 14,
     gender: "Male",
     price: 3200,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/29-1.png",
       "/images/puppies/29-2.png",
@@ -981,7 +981,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1004,7 +1004,7 @@ export const puppies: Puppy[] = [
     age: 17,
     gender: "Female",
     price: 2500,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/30-1.png",
       "/images/puppies/30-2.png",
@@ -1015,7 +1015,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1038,7 +1038,7 @@ export const puppies: Puppy[] = [
     age: 13,
     gender: "Female",
     price: 2967,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/31-1.png",
       "/images/puppies/31-2.png",
@@ -1049,7 +1049,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1072,7 +1072,7 @@ export const puppies: Puppy[] = [
     age: 10,
     gender: "Male",
     price: 3195,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/32-1.png",
       "/images/puppies/32-2.png",
@@ -1083,7 +1083,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1106,7 +1106,7 @@ export const puppies: Puppy[] = [
     age: 12,
     gender: "Male",
     price: 3800,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/33-1.png",
       "/images/puppies/33-2.png",
@@ -1117,7 +1117,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1140,7 +1140,7 @@ export const puppies: Puppy[] = [
     age: 18,
     gender: "Male",
     price: 3457,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/34-1.png",
       "/images/puppies/34-2.png",
@@ -1151,7 +1151,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1174,7 +1174,7 @@ export const puppies: Puppy[] = [
     age: 9,
     gender: "Female",
     price: 3795,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/35-1.png",
       "/images/puppies/35-2.png",
@@ -1185,7 +1185,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1208,7 +1208,7 @@ export const puppies: Puppy[] = [
     age: 17,
     gender: "Male",
     price: 2600,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/36-1.png",
       "/images/puppies/36-2.png",
@@ -1219,7 +1219,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1242,7 +1242,7 @@ export const puppies: Puppy[] = [
     age: 15,
     gender: "Male",
     price: 2600,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/37-1.png",
       "/images/puppies/37-2.png",
@@ -1253,7 +1253,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1276,7 +1276,7 @@ export const puppies: Puppy[] = [
     age: 9,
     gender: "Female",
     price: 3600,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/38-1.png",
       "/images/puppies/38-2.png",
@@ -1287,7 +1287,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1310,7 +1310,7 @@ export const puppies: Puppy[] = [
     age: 12,
     gender: "Male",
     price: 3450,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/39-1.png",
       "/images/puppies/39-2.png",
@@ -1321,7 +1321,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1344,7 +1344,7 @@ export const puppies: Puppy[] = [
     age: 12,
     gender: "Female",
     price: 3600,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/40-1.png",
       "/images/puppies/40-2.png",
@@ -1355,7 +1355,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1378,7 +1378,7 @@ export const puppies: Puppy[] = [
     age: 14,
     gender: "Female",
     price: 3200,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/41-1.png",
       "/images/puppies/41-2.png",
@@ -1389,7 +1389,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1412,7 +1412,7 @@ export const puppies: Puppy[] = [
     age: 7,
     gender: "Male",
     price: 4000,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/42-1.png",
       "/images/puppies/42-2.png",
@@ -1423,7 +1423,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1446,7 +1446,7 @@ export const puppies: Puppy[] = [
     age: 12,
     gender: "Female",
     price: 3200,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/43-1.png",
       "/images/puppies/43-2.png",
@@ -1457,7 +1457,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1480,7 +1480,7 @@ export const puppies: Puppy[] = [
     age: 8,
     gender: "Male",
     price: 4700,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/44-1.png",
       "/images/puppies/44-2.png",
@@ -1491,7 +1491,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1514,7 +1514,7 @@ export const puppies: Puppy[] = [
     age: 3,
     gender: "Male",
     price: 3600,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/45-1.png",
       "/images/puppies/45-2.png",
@@ -1525,7 +1525,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1548,7 +1548,7 @@ export const puppies: Puppy[] = [
     age: 5,
     gender: "Female",
     price: 3000,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/46-1.png",
       "/images/puppies/46-2.png",
@@ -1559,7 +1559,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1582,7 +1582,7 @@ export const puppies: Puppy[] = [
     age: 3,
     gender: "Female",
     price: 3400,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/47-1.png",
       "/images/puppies/47-2.png",
@@ -1593,7 +1593,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1616,7 +1616,7 @@ export const puppies: Puppy[] = [
     age: 13,
     gender: "Male",
     price: 5150,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/48-1.png",
       "/images/puppies/48-2.png",
@@ -1627,7 +1627,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1650,7 +1650,7 @@ export const puppies: Puppy[] = [
     age: 11,
     gender: "Male",
     price: 4850,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/49-1.png",
       "/images/puppies/49-2.png",
@@ -1661,7 +1661,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
@@ -1684,7 +1684,7 @@ export const puppies: Puppy[] = [
     age: 7,
     gender: "Male",
     price: 3500,
-    location: "California, USA",
+    location: "Idaho, USA",
     images: [
       "/images/puppies/50-1.png",
       "/images/puppies/50-2.png",
@@ -1695,7 +1695,7 @@ export const puppies: Puppy[] = [
     breeder: {
       id: "breeder1",
       name: "YorkieCharm Kennels",
-      location: "California, USA",
+      location: "Idaho, USA",
       rating: 4.9,
       phone: "(555) 123-4567",
       email: "info@yorkiecharm.com",
