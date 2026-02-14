@@ -10,6 +10,11 @@ interface PageProps {
   }>;
 }
 
+export function generateStaticParams() {
+  const breederIds = [...new Set(puppies.map((p) => p.breeder.id))];
+  return breederIds.map((id) => ({ id }));
+}
+
 export default async function BreederDetail({ params }: PageProps) {
   const { id } = await params;
   const breederPuppies = puppies.filter((p) => p.breeder.id === id);

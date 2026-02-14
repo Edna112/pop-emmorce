@@ -11,6 +11,10 @@ interface PageProps {
   }>;
 }
 
+export function generateStaticParams() {
+  return breeds.map((b) => ({ id: b.id }));
+}
+
 export default async function BreedDetail({ params }: PageProps) {
   const { id } = await params;
   const breed = breeds.find((b) => b.id === id);
