@@ -11,12 +11,43 @@ export default function ContactPage() {
     subject: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
+  const [submitError, setSubmitError] = useState("");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle contact form submission
-    alert("Thank you for your message! We'll get back to you soon. (This is a demo)");
-    setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+    setIsSubmitting(true);
+    setSubmitStatus("idle");
+    setSubmitError("");
+    try {
+      const res = await fetch("https://formsubmit.co/ajax/yorkiecharmm@gmail.com", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone || "(not provided)",
+          subject: formData.subject,
+          message: formData.message,
+          _subject: `[YorkieCharm] ${formData.subject}`,
+          _captcha: "false",
+        }),
+      });
+      const data = await res.json().catch(() => ({}));
+      if (data.success === "true" || res.ok) {
+        setSubmitStatus("success");
+        setFormData({ name: "", email: "", phone: "", subject: "", message: "" });
+      } else {
+        setSubmitStatus("error");
+        setSubmitError("Something went wrong.");
+      }
+    } catch {
+      setSubmitStatus("error");
+      setSubmitError("Network error.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -33,6 +64,16 @@ export default function ContactPage() {
               <div className="bg-white rounded-lg shadow-md p-8">
                 <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
                 <form onSubmit={handleSubmit} className="space-y-4">
+                  {submitStatus === "success" && (
+                    <div className="p-3 rounded-lg bg-green-100 text-green-800 text-sm">
+                      Thank you! Your message was sent. We&apos;ll get back to you soon.
+                    </div>
+                  )}
+                  {submitStatus === "error" && (
+                    <div className="p-3 rounded-lg bg-red-100 text-red-800 text-sm">
+                      {submitError} You can also email yorkiecharmm@gmail.com or call (208) 315-5967.
+                    </div>
+                  )}
                   <div>
                     <label className="block text-sm font-medium mb-2">Name</label>
                     <input
@@ -84,10 +125,11 @@ export default function ContactPage() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-[#FF6B35] text-white py-3 rounded-lg font-semibold hover:bg-[#E55A2B] transition-colors flex items-center justify-center space-x-2"
+                    disabled={isSubmitting}
+                    className="w-full bg-[#FF6B35] text-white py-3 rounded-lg font-semibold hover:bg-[#E55A2B] transition-colors flex items-center justify-center space-x-2 disabled:opacity-70"
                   >
                     <Send className="w-5 h-5" />
-                    <span>Send Message</span>
+                    <span>{isSubmitting ? "Sending..." : "Send Message"}</span>
                   </button>
                 </form>
               </div>

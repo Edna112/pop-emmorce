@@ -31,48 +31,49 @@ export default function ContactBreederClient({ id }: Props) {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setFeedback(null);
 
     try {
-      const res = await fetch("/api/contact-breeder", {
+      const res = await fetch("https://formsubmit.co/ajax/yorkiecharmm@gmail.com", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           name: formData.name,
           email: formData.email,
-          phone: formData.phone,
+          phone: formData.phone || "(not provided)",
           message: formData.message,
-          puppyId: puppy.id,
-          puppyName: puppy.name,
-          breed: puppy.breed,
-          breederName: puppy.breeder.name,
-          puppyPrice: puppy.price,
-          puppyLocation: puppy.location,
+          _subject: `[Breeder inquiry] ${formData.name} – ${puppy.name} (${puppy.breed})`,
+          _captcha: "false",
+          Puppy: puppy.name,
+          Breed: puppy.breed,
+          Breeder: puppy.breeder.name,
+          "Puppy ID": puppy.puppyId ?? puppy.id,
+          Price: `$${puppy.price.toLocaleString()}`,
+          Location: puppy.location,
         }),
       });
-
       const data = await res.json().catch(() => ({}));
 
-      if (!res.ok) {
+      if (data.success === "true" || res.ok) {
+        setFeedback({
+          variant: "success",
+          title: "Message sent",
+          message: "Your message has been delivered to the breeder. They will respond to you at the email address you provided.",
+        });
+        setFormData({ name: "", email: "", phone: "", message: "" });
+        setTimeout(() => router.push(`/puppies/${id}`), 2500);
+      } else {
         setFeedback({
           variant: "error",
           title: "Message not sent",
-          message: data.error ?? "Something went wrong. Please try again.",
+          message: "Something went wrong. Please try (208) 315-5967 or email yorkiecharmm@gmail.com.",
         });
-        return;
       }
-
-      setFeedback({
-        variant: "success",
-        title: "Message sent",
-        message: "Your message has been delivered to the breeder. They will respond to you at the email address you provided.",
-      });
-      setFormData({ name: "", email: "", phone: "", message: "" });
-      setTimeout(() => router.push(`/puppies/${id}`), 2500);
     } catch {
       setFeedback({
         variant: "error",
         title: "Message not sent",
-        message: "We couldn't send your message. Please check your connection and try again, or contact the breeder by phone or email.",
+        message: "Please check your connection and try again, or contact (208) 315-5967 or yorkiecharmm@gmail.com.",
       });
     } finally {
       setIsSubmitting(false);
